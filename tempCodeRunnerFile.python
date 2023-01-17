@@ -1,0 +1,36 @@
+class F:
+	def func1 (abc):
+		print("this is in F")
+class G:
+	def func2(self):
+		print("this is in G")
+class E (F,G):
+	def func3(self):
+		print("this is in E")
+class B (F):
+	def func4(self):
+		print("this is in B")
+class A (B):
+	def func5(self):
+		print("this is in A")
+class C(B):
+	def func6(self):
+		print("this is in C")
+
+
+# print(issubclass(B,A))
+# print(isinstance(x,L))
+
+
+r = E()
+t = A()
+u = C()
+
+r.func1()
+r.func2()
+r.func3()
+t.func4()
+t.func5()
+u.func6()
+# # A.func1(1)
+print("Hello, world!")
